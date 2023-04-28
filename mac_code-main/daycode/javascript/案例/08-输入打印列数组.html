@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* width: 500px; */
+            height: 500px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            align-items: flex-end;
+        }
+        
+        .box div {
+            width: 50px;
+            background-color: pink;
+            text-align: center;
+        }
+        
+        .box div h4 {
+            position: relative;
+            top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let arr = [0];
+        let number = parseInt(prompt("输出多少列?"));
+        for (var j = 1; j <= number; j++) {
+            arr.push(prompt(`输入第${j}季度`));
+        }
+        document.write(`<div class="box">`);
+        for (let i = 1; i < arr.length; i++) {
+            document.write(` <div style="height:${arr[i]}px;">
+                    <span>${arr[i]}</span>
+                    <h4>第${i}季度</h4>
+                    </div>`);
+        }
+        document.write(`</div>`);
+    </script>
+</body>
+
+</html>

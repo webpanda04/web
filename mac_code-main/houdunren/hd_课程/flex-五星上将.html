@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            main {
+                margin: 0 auto;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row-reverse;
+                width: 500px;
+                height: 500px;
+                border: 1px solid rgb(210, 201, 201);
+                box-sizing: border-box;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            main .xing {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                font-size: 40px;
+            }
+            
+            main .xing::after {
+                position: absolute;
+                left: -3px;
+                content: "\2605";
+                color: darkgrey;
+                box-shadow: 2px 3px 5px 3px silver;
+            }
+            
+            main .xing:hover::after,
+            main .xing:hover~.xing::after {
+                color: rgb(250, 232, 92);
+                text-shadow: 2px 3px 5px 1px silver;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <main>
+            <div class="xing">✩</div>
+            <div class="xing">✩</div>
+            <div class="xing">✩</div>
+            <div class="xing">✩</div>
+            <div class="xing">✩</div>
+        </main>
+    </body>
+
+    </html>
+</body>
+
+</html>
