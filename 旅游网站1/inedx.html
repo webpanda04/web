@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            margin: auto;
+            width: 1000px;
+            height: 900px;
+            border: 1px solid black;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 195px;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header_left {
+
+            width: 235px;
+            height: 100%;
+            background-image: url(./images/menu_bg.jpg);
+        }
+
+        .header_left p {
+            color: aliceblue;
+            margin-top: -7px;
+            margin-left: 55px;
+        }
+
+        .header_left div {
+            position: absolute;
+            top: 32px;
+        }
+
+        article {
+            position: relative;
+            margin-top: 20px;
+            width: 100%;
+            height: 468px;
+            border-bottom: 4px solid rgb(170, 170, 168);
+        }
+
+        .aside-right {
+            position: absolute;
+            left: 255px;
+            top: 0;
+            width: 500px;
+            height: 465px;
+
+        }
+
+        .aside-right span {
+            color: red;
+        }
+
+        .aside-right .top,
+        .buttom {
+            position: relative;
+            width: 100%;
+            height: 180px;
+
+        }
+
+        .aside-right .top img:nth-child(2) {
+            position: absolute;
+            margin-left: 15px;
+        }
+
+        .aside-right .top .text {
+            position: absolute;
+            top: 15px;
+            left: 180px;
+            font-size: 14px;
+        }
+
+        .buttom {
+            position: relative;
+            margin-top: 40px;
+
+        }
+
+        .buttom img:nth-child(1) {
+            position: absolute;
+            top: 0;
+        }
+
+        .buttom img:nth-child(2) {
+            position: absolute;
+            top: 30px;
+        }
+
+        .buttom .text_buttom {
+            position: absolute;
+            top: 10px;
+            left: 180px;
+            font-size: 14px;
+        }
+
+        article aside {
+            display: flex;
+            flex-direction: row;
+            width: 235px;
+            height: 465px;
+            background-color: rgb(218, 218, 218);
+        }
+
+        article aside div {
+            position: relative;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        article aside div h3 {
+            color: rgb(111, 88, 99);
+        }
+
+        a {
+            color: rgb(110, 105, 105);
+        }
+
+        .Ico_img {
+            position: absolute;
+            top: 445px;
+            left: 118px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="./images/logo.jpg" alt="">
+        </nav>
+        <header>
+            <div class="header_left">
+                <div>
+                    <p>玩家首页</p>
+                    <p>玩家旅游</p>
+                    <p> 玩家吃喝</p>
+                    <p>精彩专题</p>
+                    <p>玩家之星</p>
+                </div>
+            </div>
+            <div class="header_right">
+                <img src="./images/banner.jpg" alt="">
+            </div>
+        </header>
+        <article>
+            <aside>
+                <div>
+                    <h3>玩家吃喝</h3>
+                    <p>・<a href="#">亲自调配独家个性咖啡</a></p>
+                    <p>・<a href="#">兰会所午间特价菜</a></p>
+                    <p>・<a href="#">古韵前门米其林西餐厅</a></p>
+                    <p>・<a href="#">原汁原味土耳其妈妈菜</a></p>
+                    <p>・<a href="#">无山美食新势力</a></p>
+                    <div>
+                        <h3>旅游度假</h3>
+                        <img src="./images/004.jpg" alt="">
+                    </div>
+                    <p style="color: red;">荷兰七日体验之旅</p>
+                    <a href="#">一年四季都是游玩阿萨姆特丹的<br>好季节,置身于这座洋溢古典与<br>现代气质的城市，您将一次领略<br>荷兰的多种“面孔”.......</a>
+                    <div class="Ico_img"><img src="./images/icon_03.jpg" alt=""></div>
+                </div>
+            </aside>
+            <div class="aside-right">
+                <div class="top">
+                    <img src="./images/002.jpg" alt="">
+                    <img src="./images/pic_01.jpg" alt="">
+                    <div class="text">
+                        <p>
+                            <span>浓情澳洲--伴您畅想悠然假期</span><br>
+                            澳洲度假旅游还有那些新奇好玩的元素？<br>
+                            本期玩家旅游网特别邀请了两位达人，给
+                            <br>我们玩家用户做澳洲旅游特别推荐....
+                        </p>
+                    </div>
+                    <hr style="margin-top: 20px;">
+                </div>
+                <div class="buttom">
+                    <img src="./images/pic_02.jpg" alt="">
+                    <img src="./images/003.jpg" alt="">
+                    <div class="text_buttom">
+                        <p>
+                            <span>荷兰家庭度假计划</span><br>
+                            荷兰是著名的“低洼之国”，全国四分之<br>
+                            一的国土位于还平面之下，因此荷兰人在<br>
+                            与水的斗争中显示了充分的智慧。北海大<br>
+                            提就是其中的经典代表。
+                            经过几百年的时间，经过多次洪水的挑战，北海大提终于形成....
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
